@@ -1,14 +1,9 @@
-/* ::-webkit-scrollbar
-{
-    display: none;
-} */
 .navbar
 {
     position: relative;
     display: flex;
     align-items: center;
     max-height: 294px;
-
 }
 input {
     box-sizing: border-box;
@@ -81,14 +76,6 @@ body
 {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-.siang{
-    background: #fff;
-    color: #333;
-}
-.malam{
-    background: #333;
-    color: #fff;
-}
 .infoDua
 {
     line-height: 30px;
@@ -102,6 +89,10 @@ body
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+      body
+{
+    min-height: 200vh;
+      }
     .unwaha
     {
         visibility: visible;
