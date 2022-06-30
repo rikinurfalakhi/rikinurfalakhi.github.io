@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>UAS AI FUZZY LOGIC</title>
+    <link rel="icon" type="image/x-icon" href="/res/img/favicon.ico">
+    <link rel='stylesheet' href='/res/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/res/css/style.css'>
+    <script src="/res/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="/res/js/new-bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+    <div class="navbar head">
+        <button type="button" class="btn btn-info right" data-toggle="modal" data-target="#exampleModalLong2">
+            How To Use?
+        </button>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalLong">
+            INFO
+        </button>
+        <div class="modal fade modal1" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3>Nama Kelompok :</h3>
+                        <p>RIKI NURFALAKHI (2002040958)<br></p>
+                        <p>AHMAD FATICH CHUMAIDI (2002040963)</p><br>
+                        <p>INFORMATIKA C</p>
+                        <P>Semester 04 (empat)</P>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal2" id="exampleModalLong2" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body infoDua">
+                        <br><br>
+                        Inputkan nama yang ingin dicari di bagian input...<br>
+                        Inputan akan bekerja hanya dengan huruf kecil saja<br>
+                        Output menghasilkan 2 metode fuzzy, yaitu :
+                        <ol class="info-ol">
+                            <li>Defuzzifikasi</li>
+                            <li>Fuzzy Inference Engine</li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                <div class="text-center mb-3">
+                    <img class="unwaha" src="res/img/icon.png" alt="">
+                </div>
+                <div class="text-center mb-3">
+                    <h1>Data nama kelas IF-C</h1>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-btn search-panel">
+                        <input autocomplete="off" type="text" class="form-control form-control-lg" id="search"
+                            placeholder="Cari Nama">
+                    </div>
+
+                </div>
+                <div class="col-5" id="match-list">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <script defer src="/res/js/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="/res/js/bootstrap.min.js"></script> -->
+    <script src="/res/js/fuzzy-search.min.js"></script>
+    <script src='/res/js/app.js'></script>
+
+</body>
+
+</html>
