@@ -18,10 +18,10 @@ function onKeydown(e) {
 function outputSearchResults(results) {
     list.innerHTML = '';
     if (results.count === lib.length) return;
-    if (results.exact.length) label(list, '<p style="background: #ddd;color: #333;padding: 5px;letter-spacing: 1.5px;">Defuzzifikasi</p><div class="bg-primary"> </div>');
+    if (results.exact.length) label(list, '<p style="background: #ddd;color: #333;padding: 5px;letter-spacing: 1.5px;">Excact String Matching</p><div class="bg-primary"> </div>');
     outputMatches(results.exact);
     if (!results.fuzzy.length) return;
-    if (results.fuzzy.length) label(list, '<p style="background: #ddd;color: #333;padding: 5px;letter-spacing: 1.5px;">Fuzzy Inference Engine</p>');
+    if (results.fuzzy.length) label(list, '<p style="background: #ddd;color: #333;padding: 5px;letter-spacing: 1.5px;">Inexcact String Matching</p>');
  
     outputMatches(results.fuzzy);
 }
